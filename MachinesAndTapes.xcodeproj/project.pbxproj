@@ -16,6 +16,8 @@
 		2C7103C221E61D8A004329C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7103C121E61D8A004329C1 /* ViewController.swift */; };
 		2C7103C421E61D8B004329C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7103C321E61D8B004329C1 /* Assets.xcassets */; };
 		2C7103C721E61D8B004329C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7103C521E61D8B004329C1 /* Main.storyboard */; };
+		2C7103D221E62DBF004329C1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7103D121E62DBF004329C1 /* Utility.swift */; };
+		2C7103D321E62DBF004329C1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7103D121E62DBF004329C1 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		2C7103C621E61D8B004329C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C7103C821E61D8B004329C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7103C921E61D8B004329C1 /* MachinesAndTapes_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MachinesAndTapes_Mac.entitlements; sourceTree = "<group>"; };
+		2C7103D121E62DBF004329C1 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		2C71039B21E4F35A004329C1 = {
 			isa = PBXGroup;
 			children = (
+				2C7103CD21E62C40004329C1 /* MachinesAndTapes */,
 				2C7103A821E6168D004329C1 /* MachinesAndTapes-iOS */,
 				2C7103BE21E61D8A004329C1 /* MachinesAndTapes-Mac */,
 				2C7103A721E6168D004329C1 /* Products */,
@@ -95,6 +99,14 @@
 				2C7103C921E61D8B004329C1 /* MachinesAndTapes_Mac.entitlements */,
 			);
 			path = "MachinesAndTapes-Mac";
+			sourceTree = "<group>";
+		};
+		2C7103CD21E62C40004329C1 /* MachinesAndTapes */ = {
+			isa = PBXGroup;
+			children = (
+				2C7103D121E62DBF004329C1 /* Utility.swift */,
+			);
+			path = MachinesAndTapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +211,7 @@
 			files = (
 				2C7103AC21E6168D004329C1 /* ViewController.swift in Sources */,
 				2C7103AA21E6168D004329C1 /* AppDelegate.swift in Sources */,
+				2C7103D221E62DBF004329C1 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +221,7 @@
 			files = (
 				2C7103C221E61D8A004329C1 /* ViewController.swift in Sources */,
 				2C7103C021E61D8A004329C1 /* AppDelegate.swift in Sources */,
+				2C7103D321E62DBF004329C1 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,21 +6,32 @@
 //
 
 import Cocoa
+import SpriteKit
 
-class ViewController: NSViewController {
+final class ViewController: NSViewController {
 
+  private lazy var scene: SKScene = uninitialized()
+  private var sceneView: SKView {
+    return view as! SKView
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
+    
+    setupScene()
   }
-
-  override var representedObject: Any? {
-    didSet {
-    // Update the view, if already loaded.
-    }
-  }
-
-
 }
 
+private extension ViewController {
+  func setupScene() {
+    scene = SKScene.init(size: sceneView.frame.size)
+    
+    scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+    
+    sceneView.presentScene(scene)
+    
+    let node = SKShapeNode.init(rect: <#T##CGRect#>, cornerRadius: <#T##CGFloat#>)
+    
+    scene.addChild(node)
+  }
+}
